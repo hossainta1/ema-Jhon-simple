@@ -3,6 +3,7 @@ import Product from '../Product/Product';
 import './Shop.css';
 import Cart from '../Cart/Cart';
 import { addToDb, getShoppingCart } from '../../utilities/fakedb';
+import { Link } from 'react-router-dom';
 
 const Shop = () => {
     const [products, setProducts] = useState([]);
@@ -87,7 +88,9 @@ const Shop = () => {
                 <Cart
                     cart={cart}
                     handleClearCart={handleClearCart}
-                ></Cart>
+                >
+                    <Link className='procced-link' to='/orders'> <button className='btn-procedd'>Review Order</button> </Link>
+                </Cart>
             </div>
         </div>
     );
