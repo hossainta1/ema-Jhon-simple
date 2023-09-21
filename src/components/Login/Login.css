@@ -57,3 +57,7 @@
 .btn-submit:hover {
     background: rgba(255, 153, 0, 0.6);
 }
+
+.font-title-span {
+    color: rgb(199, 43, 43);
+}
