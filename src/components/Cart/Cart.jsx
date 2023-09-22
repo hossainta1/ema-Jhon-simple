@@ -27,8 +27,8 @@ const Cart = ({ cart, handleClearCart, children }) => {
             <p>Selected Items:{quantity}</p>
             <p>Total Price:${totalPrice}</p>
             <p>Total Shipping:{totalShipping}</p>
-            <p>Tax:{tax.toFixed(2)}</p>
-            <h4>Grand Total:{grandTotal.toFixed(2)}</h4>
+            <p>Tax:${tax.toFixed(2)}</p>
+            <h4>Grand Total:${grandTotal.toFixed(2)}</h4>
             <button onClick={handleClearCart} className='btn-clear-cart'>
                 <span>Clear Cart</span>
                 <FontAwesomeIcon icon={faTrashAlt} />
